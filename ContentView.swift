@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Memorize1
 //
-//  Created by Elizabeth Clarkson on 9/27/22.
+//  Created by Elizabeth Ponce on 9/27/22.
 //
 
 import SwiftUI
@@ -23,39 +23,12 @@ struct ContentView: View {
                 }
             }
             .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-            Spacer(minLength: 20)
-            HStack {
-                remove
-                Spacer()
-                add
-            }
-            .font(.largeTitle)
-            .padding(.horizontal)
         }
         .padding(.horizontal)
     }
-    
-    var remove: some View {
-        Button {
-            if emojiCount > 1{
-            emojiCount -= 1
-            }
-        } label: {
-            Image(systemName: "minus.circle")
-        }
-    }
-    
-    var add : some View {
-        Button {
-            if emojiCount < emojis.count {
-            emojiCount += 1
-            }
-        } label: {
-            Image(systemName: "plus.circle")
-    
-        }
-    }
 }
+    
+  
 
 
 struct CardView: View {
@@ -97,7 +70,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.dark)
-.previewInterfaceOrientation(.landscapeLeft)
+.previewInterfaceOrientation(.portraitUpsideDown)
         ContentView()
             .preferredColorScheme(.light)
 .previewInterfaceOrientation(.portraitUpsideDown)

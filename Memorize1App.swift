@@ -2,7 +2,7 @@
 //  Memorize1App.swift
 //  Memorize1
 //
-//  Created by Elizabeth Clarkson on 9/27/22.
+//  Created by Elizabeth Ponce on 9/27/22.
 //
 
 import SwiftUI
